@@ -1,0 +1,143 @@
+{
+	"info": {
+		"_postman_id": "e9dc85a6-025a-43ad-a42e-db766ef4f34b",
+		"name": "Lab5",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30514818",
+		"_collection_link": "https://interstellar-crater-141578.postman.co/workspace/My-Workspace~1d96c07c-7f50-4289-8ce9-ab91818a2257/collection/30514818-e9dc85a6-025a-43ad-a42e-db766ef4f34b?action=share&source=collection_link&creator=30514818"
+	},
+	"item": [
+		{
+			"name": "Notes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/notes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"notes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UploadForm.html",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Upload",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"note_name\": \"note\",\r\n    \"note\": \"create note\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/upload?Content-Type=application/json",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"upload"
+					],
+					"query": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Notes/<ім’я нотатки>",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/notes/note1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"notes",
+						"note1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update note",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/notes/note1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"notes",
+						"note1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete note",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/notes/note1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"notes",
+						"note1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
