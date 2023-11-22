@@ -32,14 +32,14 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8000/",
+					"raw": "http://localhost:8000/UploadHtml.html",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "8000",
 					"path": [
-						""
+						"UploadHtml.html"
 					]
 				}
 			},
